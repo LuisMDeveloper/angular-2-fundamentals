@@ -1,0 +1,7 @@
+<div>
+    <ul>
+        <li *ngFor="let todo of todoService.todos | search">
+            <todo-item [todo]="todo"></todo-item>
+        </li>
+    </ul>
+</div>

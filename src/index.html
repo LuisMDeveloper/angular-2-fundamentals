@@ -10,8 +10,19 @@
   {{/unless}}
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    .completed {
+        background-color: red;      
+    }
+
+    .started {
+        background-color: yellow;
+    }
+  </style>
 </head>
 <body>
+  <div class="completed">completed</div>
+  <div class="started">started</div>
   <app-root>Loading...</app-root>
   
     {{#each scripts.polyfills}}
